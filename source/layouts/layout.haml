@@ -19,6 +19,8 @@
       .twelve.columns
         %h2
           %a{href: "/"}= data.site.title
+        %h4
+          {#{data.site.sub}}
         %hr
     .row
       .eight.columns
@@ -26,6 +28,8 @@
       / Application Javascript, safe to override
       = javascript_include_tag "app"
       %aside.four.columns
+        .panel
+          %img{src:'images/avatar.png'}
         .panel
           - if paginate
             %p
