@@ -3,23 +3,20 @@
     .eight.columns
       %h4.post_title
         =current_page.data.title
-      %a{:href => "/archive.html"}
-        %span.post_date= current_page.date.strftime('%b %e')
-        = yield
-        .metadata
-        %span
-          %i.icon-pencil
-          %a{:href => "archive.html"} Writer
+      / a{:href => "/archive.html"}
+      %span.post_date= current_page.date.strftime('%b %e')
+      = yield
+
+      .metadata
+        / %span
+        /   %i.icon-pencil
+        /   %a{:href => "archive.html"} Writer
         %span
           %i.icon-time
-          %a{:href => "archive.html"} Date
+          = current_page.date.strftime('%b %e')
         %span
           %i.icon-list
-          %a{:href => "archive.html"} Tags/Category
+          =current_page.data.tags
+
 
     %br.clear
-  / .post
-  /   %h2= current_page.data.title
-  /   %article
-  /     = find_and_preserve do
-  /       = yield
