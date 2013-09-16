@@ -1,5 +1,25 @@
 - wrap_layout :layout do
-  %h2= current_page.data.title
-  %article
-    = find_and_preserve do
-      = yield
+  %section
+    .eight.columns
+      %h4.post_title
+        =current_page.data.title
+      %a{:href => "/archive.html"}
+        %span.post_date= current_page.date.strftime('%b %e')
+        = yield
+        .metadata
+        %span
+          %i.icon-pencil
+          %a{:href => "archive.html"} Writer
+        %span
+          %i.icon-time
+          %a{:href => "archive.html"} Date
+        %span
+          %i.icon-list
+          %a{:href => "archive.html"} Tags/Category
+
+    %br.clear
+  / .post
+  /   %h2= current_page.data.title
+  /   %article
+  /     = find_and_preserve do
+  /       = yield

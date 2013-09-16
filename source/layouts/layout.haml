@@ -11,50 +11,53 @@
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
     %title= data.page.title
     / Included CSS Files
-    = stylesheet_link_tag "app", "theme", "ghfm"
-    = javascript_include_tag "foundation/modernizr.foundation"
+    = stylesheet_link_tag "font-awesome", "app", "theme", "ghfm"
     %link{rel: "alternate", type: "application/rss+xml", title: "RSS Feed", href: "feed.xml"}
   %body{class: page_classes}
-    .row
-      .twelve.columns
-        %h2
-          %a{href: "/"}= data.site.title
-        %h4
-          {#{data.site.sub}}
-        %hr
-    .row
-      .eight.columns
-        = yield
-      / Application Javascript, safe to override
-      = javascript_include_tag "app"
-      %aside.four.columns
-        .panel
-          %img{src:'images/avatar.png'}
-        .panel
-          - if paginate
-            %p
-              Page
-              = page_number
-              of
-              = num_pages
-        %dl.tabs
-          %dd.active
-            %a{href: "#recent"} Recent Articles
-          %dd
-            %a{href: "#tags"} Tags
-        %ul.tabs-content
-          %li#recentTab.active
-            %h4 Recent Articles
-            %ul.disc
-              - blog.articles[0...10].each do |article|
-                %li
-                  %a{href: "#{article.url}"}
-                    = article.title
-                  %span= article.date.strftime('%b %e')
-          %li#tagsTab
-            %h4 Tags
-            %ul.disc
-              - blog.tags.each do |tag, articles|
-                %li
-                  %a{href: "#{tag_path tag}"}
-                    = "#{tag} (#{articles.size})"
+
+  / Primary Page Layout
+  / ==================================================
+
+  %header
+    %h4.logo
+      %a{:href => '/'} CODE HAPPY
+    %nav
+      %ul
+        %li
+          %a{href: "/"} HOME
+        %li
+          %a{href: "/about.html"} ABOUT
+        %li
+        /   %a{href: "/archive.html"} ARCHIVE
+        / %li
+        /   %a{href: "/contact.html"} CONTACT
+    %br.clear
+
+  = yield
+
+  %footer
+    .slate
+      .eight.columns.contact
+        %h5 Contact
+        %p You know, to say hi and stuff.
+        .social
+          %a{:href => "http://facebook.com/nathanielwatts"}
+            %button.facebook
+              %i.icon-facebook
+          %a{:href => "http://twitter.com/thewatts"}
+            %button.twitter
+              %i.icon-twitter
+          %a{:href => "http://github.com/thewatts"}
+            %button.github
+              %i.icon-github
+        / %a{:href => "#"}
+        /   %button.google_plus
+        /     %i.icon-google-plus
+        / %a{:href => "#"}
+        /   %button.pinterest
+        /     %i.icon-pinterest
+
+  %script{:src => "http://code.jquery.com/jquery-1.7.1.min.js"}
+  = javascript_include_tag "jquery.fitvids"
+  = javascript_include_tag "respond.min"
+  = javascript_include_tag "script"

@@ -72,6 +72,12 @@ page "style.html", layout: "raw"
 #   end
 # end
 
+helpers do
+  def some_helper
+    "helper"
+  end
+end
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'

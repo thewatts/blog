@@ -3,25 +3,29 @@ title: Welcome to Middleman Foundation
 pageable: true
 per_page: 10
 ---
-.row
-  .twelve.columns
-    - page_articles.each_with_index do |article, i|
-      .panel
-        %p
-          %h3
-            = link_to article.title, article
-            %span= article.date.strftime('%b %e')
-          %p= article.summary
 
-.row
-  .six.columns
-    - if prev_page
-      .panel
-        %p
-          = link_to 'Previous page', prev_page
+- page_articles.each_with_index do |article, i|
+  %section
+    .eight.columns
+      %h4.post_title
+        %a{:href => article.url}= article.title
+      %a{:href => "/archive"}
+        %span.post_date= article.date.strftime('%b %e')
+      %p= article.summary
+      %blockquote Blockquote here
+      %a{:href => article.url}
+        %button.float_right READ MORE
+    %br.clear/
 
-  .six.columns
-    - if paginate
-      - if next_page
-        .panel
-          %p= link_to 'Next page', next_page
+/ .row
+/   .six.columns
+/     - if prev_page
+/       .panel
+/         %p
+/           = link_to 'Previous page', prev_page
+
+/   .six.columns
+/     - if paginate
+/       - if next_page
+/         .panel
+/           %p= link_to 'Next page', next_page
