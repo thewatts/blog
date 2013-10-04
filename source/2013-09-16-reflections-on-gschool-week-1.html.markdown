@@ -6,15 +6,19 @@ tags: reflections, gschool
 
 > "One reason so few of us achieve what we truly want is that we never direct our focus; we never concentrate our power. Most people dabble their way through life, never deciding to master anything in particular." — *Tony Robbins*
 
-A week ago today, I started <a href="http://gschool.it" title="gSchool">gSchool</a>. It was the culmination of months of prayer and preparation, moving my family away from comfort and community to an entirely new season of life.
+A week ago today, I started <a href="http://gschool.it" title="gSchool">gSchool</a>.
+
+It was the culmination of months of prayer and preparation, moving my family away from comfort and community to an entirely new season of life.
 
 If this isn't your first time on the Internet, then I'm sure you've seen your fair share of bogus promises and 'too good to be true' solutions to every problem in life.
 
 I mean, really, you just get a decent camera with a few lights and pay your cousin to edit a video together with some bootlegged music - and BAM. You're some amazing service from the interweb.
 
-"So... *is this gSchool thing really legit?"*
+Some people asked me - "So... *is this gSchool thing really legit?"*
 
-Looking back - I don't know that I ever questioned the intent of any of the instructors. I believed they believed in their product... but was it for me?
+It is, I can assure you.
+
+And looking back - I don't know that I ever questioned the intent of any of the instructors. I believed they believed in their product... *but was it for me*?
 
 - Was it a wise investment?
 - Was it *really* the right timing?
