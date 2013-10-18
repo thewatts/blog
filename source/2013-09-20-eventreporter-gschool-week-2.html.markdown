@@ -5,11 +5,9 @@ tags: learning, testing, reflections
 ---
 
 
--- 
-  ## Personal Retrospective
-    You have 25 minutes to write and publish a personal retrospective 
-    on your class blog including: 
--->
+## Personal Retrospective
+You have 25 minutes to write and publish a personal retrospective
+on your class blog including:
 
 > “The reward of a thing well done, is to have done it.” - *Ralph Waldo Emerson*
 

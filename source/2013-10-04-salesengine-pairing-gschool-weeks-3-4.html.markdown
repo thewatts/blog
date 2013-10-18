@@ -3,6 +3,7 @@ title: SalesEngine & Pairing, gSchool weeks 3 & 4
 date: 2013-10-04 15:17 UTC
 tags: pair programming, reflections
 ---
+
 > "Unity is strength... when there is teamwork and collaboration, wonderful things can be achieved." - *[Mattie Stepanek](http://en.wikipedia.org/wiki/Mattie_Stepanek)*
 
 The past two weeks, we spent our days (and nights) working on a project called [Sales
