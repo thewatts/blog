@@ -4,10 +4,10 @@ date: 2013-10-18 15:06 UTC
 tags: retrospective, sinatra
 ---
 
-> I am a thing of beauty. - *Frank Sinatra*
+> "I am a thing of beauty." ― *Frank Sinatra*
 
-This past week, we officially jumped our of the terminal for running programs,
-and into the web. That's right, folks, we are officially, "Singing with
+We've jumped out of the terminal for running programs,
+and into the web. You heard me right - we are officially, "Singing with
 [Sinatra](http://www.sinatrarb.com/)"... well... at least we're *striving* to
 sing!
 
@@ -30,8 +30,7 @@ correctly structure our Sinatra apps.
 
 It's been an incredibly fun week!
 
-We started a project, called,
-[IdeaBox](http://bit.ly/16Uyusn)
+We started a project, called, [IdeaBox](http://bit.ly/16Uyusn)
 
 I've been challenged with this project, though. With my previous experience
 programming frontend, I could easily spend hours upon hours concentrating on
@@ -49,3 +48,4 @@ I won't be concentrating on any frontend work. Tough, but *good*.
 Ultimately, I didn't come here to become a better frontend developer...
 
 I came here to learn Ruby, *and so I shall*.
+
