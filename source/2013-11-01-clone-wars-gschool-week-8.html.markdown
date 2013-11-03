@@ -2,6 +2,7 @@
 title: Clone Wars - gSchool week 8
 date: 2013-11-01 15:22 UTC
 tags: retrospective, team work
+layout: article_standard
 ---
 
 > No one can whistle a symphony. It takes an orchestra to play it. - *H.E.

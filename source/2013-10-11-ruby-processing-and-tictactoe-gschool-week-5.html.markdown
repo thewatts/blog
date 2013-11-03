@@ -1,4 +1,5 @@
 ---
+layout: admin
 title: Ruby Processing & TicTacToe, gSchool Week 5
 date: 2013-10-11 15:04 UTC
 tags: reflections
@@ -38,7 +39,7 @@ resting*.
 
 We didn't have this huge agenda, or a project deadline looming in front of us.
 We just got to program and work on things at an easy pace. *And I'm so very
-thankful for it*. I was able to go home, and just *be*. To walk in the door, 
+thankful for it*. I was able to go home, and just *be*. To walk in the door,
 spend time with my bride, relax, and just *be*.
 
 Granted, I failed at getting home as early as I should have - but hey, I now

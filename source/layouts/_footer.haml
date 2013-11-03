@@ -1,0 +1,39 @@
+%footer#main-footer
+  #footer-widgets.clearfix
+    .footer-widget
+      #text-2.f_widget.widget_text
+        %h4.widgettitle Custom Text Widget
+        .textwidget
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula faucibus mi eget auctor. Sed et diam at enim faucibus placerat. Duis rutrum, ipsum nec tristique pulvinar, sapien enim mattis mi, sed tincidunt massa velit et elit.
+      / .f_widget
+    / end .footer-widget
+    .footer-widget
+      #text-3.f_widget.widget_text
+        %h4.widgettitle Custom Text Widget
+        .textwidget
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula faucibus mi eget auctor. Sed et diam at enim faucibus placerat. Duis rutrum, ipsum nec tristique pulvinar, sapien enim mattis mi, sed tincidunt massa velit et elit.
+      / .f_widget
+    / end .footer-widget
+    .footer-widget.last
+      #recent-posts-2.f_widget.widget_recent_entries
+        %h4.widgettitle Recent Posts
+        %ul
+          %li
+            %a{href: "http://elegantthemes.com/preview/Serene/hello-world/", title: "Some Post Title Goes Here"} Some Post Title Goes Here
+          %li
+            %a{href: "http://elegantthemes.com/preview/Serene/an-article-with-no-image/", title: "An Article With No Image"} An Article With No Image
+          %li
+            %a{href: "http://elegantthemes.com/preview/Serene/this-is-a-video-post/", title: "This Is A Video Post"} This Is A Video Post
+          %li
+            %a{href: "http://elegantthemes.com/preview/Serene/true-art-is-characterized-by-an-irresistible-urge-in-the-creative-artist/", title: "My Favorite Quote Of The Day"} My Favorite Quote Of The Day
+          %li
+            %a{href: "http://elegantthemes.com/preview/Serene/beauty-is-found-in-the-small-things/", title: "Post With A Gallery"} Post With A Gallery
+      / .f_widget
+    / end .footer-widget
+  / #footer-widgets
+  %p#footer-info
+    %a{href: "http://wordpress.org/", rel: "generator"} Proudly powered by WordPress
+    Theme: Serene by
+    = succeed "." do
+      %a{href: "http://www.elegantthemes.com/", rel: "designer"} Elegant Themes
+/ #main-footer

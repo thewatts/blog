@@ -1,4 +1,5 @@
 ---
+layout: admin
 title: Powwow.io - gSchool Week 7
 date: 2013-10-28 15:25 UTC
 tags: retrospective, ideabox, sinatra, pusher
@@ -22,7 +23,7 @@ My project, overall, turned out pretty good. You can find it here:
 it (Powwow)[http://github.com/thewatts/powwow].
 
 The purpose of the gem was to be able to interface with the server and
-create/list ideas through an API built on top of Powwow. 
+create/list ideas through an API built on top of Powwow.
 
 It was a definite learning experience, and - ha - it doesn't work unless you're
 running the server locally. It still needs actual user authentication, and some

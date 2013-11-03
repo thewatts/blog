@@ -1,62 +1,19 @@
-!!! 5
-/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-/[if IE 8] <html class="no-js lt-ie9" lang="en">
-:plain
-  <!--[if gt IE 8] -->
-%html{lang: "en"}
-  /<![endif]
-  %head
-    %meta{charset: "utf-8"}/
-    / Set the viewport width to device width for mobile
-    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
-    %title= data.page.title
-    / Included CSS Files
-    = stylesheet_link_tag "font-awesome", "app", "theme", "ghfm"
-    %link{rel: "alternate", type: "application/rss+xml", title: "RSS Feed", href: "feed.xml"}
-  %body{class: page_classes}
+!!!
+/[if IE 8]
+  <html id="ie8" lang="en-US">
+/ [if !(IE 8)  ]><!
+%html{lang: "en-US"}
+  / <![endif]
+  =partial "layouts/head_scripts_styles"
+  %body.home.blog
+    #container
+      =partial "layouts/header"
 
-  / Primary Page Layout
-  / ==================================================
+      =yield
 
-  %header
-    %h4.logo
-      %a{:href => '/'} CODE HAPPY
-    %nav
-      %ul
-        %li
-          %a{href: "/"} HOME
-        %li
-          %a{href: "/about.html"} ABOUT
-        %li
-        /   %a{href: "/archive.html"} ARCHIVE
-        / %li
-        /   %a{href: "/contact.html"} CONTACT
-    %br.clear
-  = yield
+      =partial "layouts/pagination"
 
-  %footer
-    .slate
-      .eight.columns.contact
-        %h5 Contact
-        %p You know, to say hi and stuff.
-        .social
-          %a{:href => "http://facebook.com/nathanielwatts"}
-            %button.facebook
-              %i.icon-facebook
-          %a{:href => "http://twitter.com/thewatts"}
-            %button.twitter
-              %i.icon-twitter
-          %a{:href => "http://github.com/thewatts"}
-            %button.github
-              %i.icon-github
-        / %a{:href => "#"}
-        /   %button.google_plus
-        /     %i.icon-google-plus
-        / %a{:href => "#"}
-        /   %button.pinterest
-        /     %i.icon-pinterest
+      =partial "layouts/footer"
 
-  %script{:src => "http://code.jquery.com/jquery-1.7.1.min.js"}
-  = javascript_include_tag "jquery.fitvids"
-  = javascript_include_tag "respond.min"
-  = javascript_include_tag "script"
+    / #container
+    =partial "layouts/scripts_styles"

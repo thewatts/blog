@@ -1,0 +1,55 @@
+-quote       = article.instance_variable_get("@enhanced_data")["quote"]
+-author      = article.instance_variable_get("@enhanced_data")["author"]
+-author_link = article.instance_variable_get("@enhanced_data")["author_link"]
+%h2
+  quote:
+  =quote
+-layout = article.instance_variable_get("@enhanced_data")["layout"]
+%article#post-14.post-14.post.type-post.status-publish.format-quote.hentry.category-nature.et-no-image.et-bg-layout-light
+  .top-info{style: "color: #4daee3;"}
+    .post-content.clearfix
+      .entry-content.clearfix
+        %blockquote
+          %p
+            "
+            =quote
+            "
+            %br
+            %em.quote-author
+              ="-"
+              =author
+        %p.meta-info
+          Posted
+          in
+          %a{href: "http://elegantthemes.com/preview/Serene/category/nature/", rel: "category tag", title: "View all posts in Nature"} Nature
+    / .post-content
+    .meta-date
+      .meta-date-wrap
+        %span.meta-post-date
+          %strong>
+            =article.date.strftime('%b.')
+          =article.date.strftime('%e')
+    %a.et-quote-more-link{href: "http://elegantthemes.com/preview/Serene/true-art-is-characterized-by-an-irresistible-urge-in-the-creative-artist/"} Read More
+  / .top-info
+
+%article#post-7.post-7.post.type-post.status-publish.format-standard.hentry.category-nature.et-no-image.et-bg-layout-light{style: "background-color: #507c90;"}
+  .post-content.clearfix
+    %h2.title
+      %a{href: "http://elegantthemes.com/preview/Serene/an-article-with-no-image/"}
+        =article.title
+    %p.meta-info
+      Posted
+      in
+      %a{href: "http://elegantthemes.com/preview/Serene/category/nature/", rel: "category tag", title: "View all posts in Nature"} Nature
+    / .meta-info
+    .entry-content.clearfix
+      %p
+        =article.summary(250, '>>')
+        %a.read-more{href: article.url} read more
+  / .post-content
+  .meta-date
+    .meta-date-wrap
+      %span.meta-post-date
+        %strong>
+          =article.date.strftime('%b.')
+        =article.date.strftime('%e')

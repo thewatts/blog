@@ -1,4 +1,5 @@
 ---
+layout: admin
 title: Reflections on gSchool - Week 1
 date: 2013-09-16 11:19 UTC
 tags: reflections, gschool

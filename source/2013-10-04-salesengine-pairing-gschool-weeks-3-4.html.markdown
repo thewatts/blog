@@ -1,7 +1,11 @@
 ---
+layout: quote
 title: SalesEngine & Pairing, gSchool weeks 3 & 4
 date: 2013-10-04 15:17 UTC
 tags: pair programming, reflections
+quote: Unity is strength... when there is teamwork and collaboration, wonderful things can be achieved.
+author: Mattie Stephanek
+author_link: http://en.wikipedia.org/wiki/Mattie_Stepanek
 ---
 
 > "Unity is strength... when there is teamwork and collaboration, wonderful things can be achieved." - *[Mattie Stepanek](http://en.wikipedia.org/wiki/Mattie_Stepanek)*

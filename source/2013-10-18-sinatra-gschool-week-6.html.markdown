@@ -1,4 +1,5 @@
 ---
+layout: admin
 title: Sinatra - gSchool week 6
 date: 2013-10-18 15:06 UTC
 tags: retrospective, sinatra

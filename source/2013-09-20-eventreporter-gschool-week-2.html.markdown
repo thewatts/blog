@@ -1,4 +1,5 @@
 ---
+layout: admin
 title: EventReporter... gSchool Week 2
 date: 2013-09-20 15:11 UTC
 tags: learning, testing, reflections

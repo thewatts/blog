@@ -1,0 +1,21 @@
+%article#post-7.post-7.post.type-post.status-publish.format-standard.hentry.category-nature.et-no-image.et-bg-layout-light{style: "background-color: #507c90;"}
+  .post-content.clearfix
+    %h2.title
+      %a{href: "http://elegantthemes.com/preview/Serene/an-article-with-no-image/"}
+        =article.title
+    %p.meta-info
+      Posted
+      in
+      %a{href: "http://elegantthemes.com/preview/Serene/category/nature/", rel: "category tag", title: "View all posts in Nature"} Nature
+    / .meta-info
+    .entry-content.clearfix
+      %p
+        =article.summary(250, '>>')
+        %a.read-more{href: article.url} read more
+  / .post-content
+  .meta-date
+    .meta-date-wrap
+      %span.meta-post-date
+        %strong>
+          =article.date.strftime('%b.')
+        =article.date.strftime('%e')
