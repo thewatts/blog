@@ -13,6 +13,7 @@ gem "rack-contrib"
 
 gem "redcarpet"
 gem "pygments.rb"
-gem "bitly"
 
-gem 'pry'
+group :development, :test do
+  gem 'pry'
+end
