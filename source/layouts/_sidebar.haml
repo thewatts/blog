@@ -1,0 +1,79 @@
+#sidebar
+  #sidebar-name
+    %span.sidebar-name-wrap Clutterless
+  / #sidebar-name
+  #sidebar-inner
+    #sidebar-logo
+      .logo
+        .logo-image
+          %a{href: "http://demo.onepagelove.com/clutterless", title: "Clutterless - A Minimal Blogging WordPress Theme"}
+            %img{alt: "Clutterless", height: "48", src: "http://opldemos.wpengine.netdna-cdn.com/clutterless/wp-content/uploads/sites/2/2013/03/rob-96.png", width: "48"}/
+        / .logo-image
+        .logo-name
+          %h1
+            %a{href: "http://demo.onepagelove.com/clutterless", title: "Clutterless - A Minimal Blogging WordPress Theme"}
+              %img{alt: "Clutterless", height: "25", src: "http://opldemos.wpengine.netdna-cdn.com/clutterless/wp-content/uploads/sites/2/2013/03/clutterless-logo.png"}/
+        / .logo-name
+        .tagline A Minimal Blogging WordPress Theme
+        / .tagline
+        .clear
+      / #logo
+    / #sidebar-logo
+    / Mobile dropdown menu button
+    #sidebar-dropdown
+      %a{href: "#", onclick: "toggle_visibility('sidebar-mobile-info');"}
+        %svg{"enable-background" => "new 0 0 24 24", fill: "#FFFFFF", height: "24px", version: "1.1", viewbox: "0 0 24 24", width: "24px", x: "0px", "xml:space" => "preserve", xmlns: "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink", y: "0px"}
+          %g
+            %g
+              %path{d: "M23.244,17.009H0.75c-0.413,0-0.75,0.36-0.75,0.801v3.421C0,21.654,0.337,22,0.75,22h22.494c0.414,0,0.75-0.346,0.75-0.77    V17.81C23.994,17.369,23.658,17.009,23.244,17.009z M23.244,9.009H0.75C0.337,9.009,0,9.369,0,9.81v3.421    c0,0.424,0.337,0.769,0.75,0.769h22.494c0.414,0,0.75-0.345,0.75-0.769V9.81C23.994,9.369,23.658,9.009,23.244,9.009z     M23.244,1.009H0.75C0.337,1.009,0,1.369,0,1.81V5.23c0,0.423,0.337,0.769,0.75,0.769h22.494c0.414,0,0.75-0.346,0.75-0.769V1.81    C23.994,1.369,23.658,1.009,23.244,1.009z"}
+    / #sidebar-dropdown
+    .clear
+    / This is what slides down on mobile menu click
+    #sidebar-mobile-info
+      #sidebar-bio
+        %p This is an area where you can talk about yourself or your blog. Below are widgets with custom menus you can create in the dashboard, no coding needed. Neat!
+      / /#sidebar-bio
+      .clear
+      #sidebar-widgets
+        .sidebar-widget
+          %span.sidebar-widget-title Connect
+          .menu-connect-container
+            %ul#menu-connect.menu
+              %li#menu-item-880.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-880
+                %a{href: "http://twitter.com/onepagelove"} Twitter
+              %li#menu-item-882.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-882
+                %a{href: "http://instagram.com/rob_hope"} Instagram
+              %li#menu-item-881.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-881
+                %a{href: "http://pinterest.com/onepagelove"} Pinterest
+              %li#menu-item-931.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-931
+                %a{href: "http://facebook.com/onepagelove"} Facebook
+        .sidebar-widget
+          %span.sidebar-widget-title Projects
+          .menu-projects-container
+            %ul#menu-projects.menu
+              %li#menu-item-884.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-884
+                %a{href: "http://onepagelove.com"} One Page Love
+              %li#menu-item-885.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-885
+                %a{href: "http://mmminimal.com"} mmminimal
+              %li#menu-item-886.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-886
+                %a{href: "http://footerlove.com"} Footer Love
+              %li#menu-item-887.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-887
+                %a{href: "http://themecobra.com"} ThemeCobra
+      / #sidebar-widgets
+      .clear
+      #search
+        %form#search-form{action: "http://demo.onepagelove.com/clutterless/", method: "post"}
+          %input#search-field{name: "s", onfocus: "this.value=''", type: "text", value: "Search"}/
+          %input#search-button{type: "submit", value: ""}/
+      / #search
+      .clear
+      #sidebar-credit
+        %p
+          %a{href: "http://onepagelove.com/themes/clutterless", target: "_blank"} Clutterless WordPress Theme
+          %span.by by
+          %a{href: "http://onepagelove.com", target: "_blank"} One Page Love
+      / #sidebar-credit
+      .clear
+    / #sidebar-mobile-info
+  / sidebar-inner
+/ sidebar

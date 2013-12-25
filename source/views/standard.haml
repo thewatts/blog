@@ -1,65 +1,19 @@
-- wrap_layout :layout do
-  %h2
-    =current_page.methods
-    %br
-    %br
-    =current_page.instance_variables
-    %br
-    %br
-    =current_page.instance_variable_get("@local_metadata")
-    %br
-    %br
-    =current_page.instance_variable_get("@enhanced_data")["layout"]
-
-  %br
-  %br
-  %br
-  %article#post-1.post-1.post.type-post.status-publish.format-standard.hentry.category-nature.et-bg-layout-dark.et-white-bg
-    .main-image
-      %img.attachment-serene-featured-image.wp-post-image{alt: "thumb-1", height: "540", src: "http://elegantthemes.com/preview/Serene/wp-content/uploads/2013/08/thumb-1.jpg", width: "1280"}/
-      .meta-date
-        .meta-date-wrap
-          %span.meta-post-date
-            %strong>
-              =current_page.date.strftime('%b.')
-            =current_page.date.strftime('%e')
-    / .main-image
-    .post-content.clearfix
-      %h1.title
-        =current_page.title
-      %p.meta-info
-        Posted
-        in
-        %a{href: "http://elegantthemes.com/preview/Serene/category/nature/", rel: "category tag", title: "View all posts in Nature"} Nature
-      / .meta-info
-      .entry-content.clearfix
-        =current_page.body
-    / .post-content
-
-/ %article#post-1.post-1.post.type-post.status-publish.format-standard.hentry.category-nature.et-bg-layout-dark.et-white-bg
-/   .main-image
-/     %a.et-main-image-link{href: "http://elegantthemes.com/preview/Serene/hello-world/"}
-/       %img.attachment-serene-featured-image.wp-post-image{alt: "thumb-1", height: "540", src: "http://elegantthemes.com/preview/Serene/wp-content/uploads/2013/08/thumb-1.jpg", width: "1280"}/
-/       .meta-date
-/         .meta-date-wrap
-/           %span.meta-post-date
-/             %strong>
-/             =article.date.strftime('%b %e')
-/           .meta-comments-count
-/             %span.icon_comment_alt{"aria-hidden" => "true"}>
-/             2
-/   / .main-image
-/   .post-content.clearfix
-/     %h2.title
-/       %a{href: article.url}= article.title
-/     %p.meta-info
-/       Posted
-/       %a=article.date.strftime('%b %e')
-/       in
-/       %a{href: "http://elegantthemes.com/preview/Serene/category/nature/", rel: "category tag", title: "View all posts in Nature"} Nature
-/     / .meta-info
-/     .entry-content.clearfix
-/       %p
-/         =article.summary(250, '>>')
-/         %a.read-more{href: article.url} read more
-/   / .post-content
+.post
+  .post-date
+    %a{href: article.url}
+      = article.date.strftime('%e %b %Y')
+    in
+    - article.tags.each do |tag|
+      %a{href: "asdf"}
+        = tag
+  / .post-date
+  .post-title
+    %h2
+      %a{href: article.url}
+        = article.title
+  / .post-title
+  .post-content
+    %p
+      = article.body
+  / .post-content
+/ /.post
