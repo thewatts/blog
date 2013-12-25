@@ -869,6 +869,10 @@ body.page .post-content {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
+
+.et-social-icon.github a:before {
+    font-family: 'FontAwesome';
+}
 .google-share a {
     padding-left: 4px;
 }

@@ -4,10 +4,21 @@ pageable: true
 per_page: 10
 ---
 
+// available layouts:
+// - standard
+// - quote
+// - video
+// - image
+
 - page_articles.each_with_index do |article, i|
+
   -layout = article.instance_variable_get("@enhanced_data")["layout"]
-  -if layout == "article_standard"
-    =partial("views/mini_article_standard", :locals => { :article => article })
+
+  -if layout    == "image"
+    =partial("views/mini_image",    :locals => { :article => article })
+  -elsif layout == "quote"
+    =partial("views/mini_quote",    :locals => { :article => article })
+  -elsif layout == "video"
+    =partial("views/mini_video",    :locals => { :article => article })
   -else
-    =partial("views/mini_article_quote", :locals => { :article => article })
-    /=partial("views/mini_article_default", :locals => { :article => article })
+    =partial("views/mini_standard", :locals => { :article => article })

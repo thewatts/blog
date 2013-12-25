@@ -1,10 +1,13 @@
+//
 - wrap_layout :layout do
   %section
+
     .eight.columns
       %h4.post_title
         =current_page.data.title
       / a{:href => "/archive.html"}
       %span.post_date= current_page.date.strftime('%b %e')
+
       = yield
 
       .metadata
@@ -17,6 +20,5 @@
         %span
           %i.icon-list
           =current_page.data.tags
-
 
     %br.clear

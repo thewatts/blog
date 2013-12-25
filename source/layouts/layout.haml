@@ -1,3 +1,5 @@
+// MAIN LAYOUT
+
 !!!
 /[if IE 8]
   <html id="ie8" lang="en-US">
@@ -6,14 +8,11 @@
   / <![endif]
   =partial "layouts/head_scripts_styles"
   %body.home.blog
+
     #container
       =partial "layouts/header"
-
       =yield
-
       =partial "layouts/pagination"
-
       =partial "layouts/footer"
 
-    / #container
-    =partial "layouts/scripts_styles"
+    =partial "layouts/footer_scripts_styles"
